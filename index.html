@@ -35,8 +35,18 @@
             // $("#sub > li:contains('4')").css('color', 'red');
             // $("#sub").children().css('color', 'red');
             // $("#sub > li:eq(2)").prev().css('color', 'red');
-            $("#sub > li:eq(2)").siblings().css('color', 'red');
-            $('a["href="http://googlr.com"]').css('backgroun','red');
+            // $("#sub > li:eq(2)").siblings().css('color', 'red');
+            // セレクタ.メソッド
+            // 属性セレクタ
+            // =
+            // !=
+            // *=
+            // ^=
+            // $=
+            //$('a[href="http://google.com"]').css('background', 'red');
+            //$('a[href!="http://google.com"]').css('background', 'red');
+            //$('a[href*="dotinstall"]').css('background', 'red');
+            $('a[href$="jp"]').css('background', 'red');
         });
     </script>
 </body>
