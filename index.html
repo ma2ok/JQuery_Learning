@@ -3,50 +3,26 @@
 <head>
     <meta charset="utf-8">
     <title>jQueryの練習</title>
+    <style>
+        .myStyle {
+            border:5px solid green;
+            font-size:48px;
+        }
+    </style>
 </head>
 <body>
     <p>jQueryの練習</p>
-    <p><a href="http://google.com">Google</a></p>
-    <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
-    <p><a href="http://dotinstall.com">Dotinstall</a></p>
+    <a href="http://google.com" data-sitename="google">google</a>
+
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
         $(function() {
-            // セレクタ.メソッド
-            // # .
-            // > 直下の子要素
-            //   それ以下の要素
-            // , 複数の要素
-            // + 隣接する要素
-            // $("#main .item").css('color', 'red');
-            // $("p, .item").css('color', 'red');
-            // $(".item + .item").css('color', 'red');
-           // セレクタ.メソッド
-            // フィルタ
-            // :eq()
-            // :gt(), :lt()
-            // :even, :odd
-            // :contains()
-            // :first, :last
-            //$("#sub > li:eq(2)").css('color', 'red');
-            //$("#sub > li:gt(1)").css('color', 'red');
-            //$("#sub > li:odd").css('color', 'red');
-            // $("#sub > li:contains('4')").css('color', 'red');
-            // $("#sub").children().css('color', 'red');
-            // $("#sub > li:eq(2)").prev().css('color', 'red');
-            // $("#sub > li:eq(2)").siblings().css('color', 'red');
-            // セレクタ.メソッド
-            // 属性セレクタ
-            // =
-            // !=
-            // *=
-            // ^=
-            // $=
-            //$('a[href="http://google.com"]').css('background', 'red');
-            //$('a[href!="http://google.com"]').css('background', 'red');
-            //$('a[href*="dotinstall"]').css('background', 'red');
-            $('a[href$="jp"]').css('background', 'red');
+            // attr
+            //console.log($('a').attr('href'));
+            //$('a').attr('href', 'http://google.co.jp');
+            // data
+            console.log($('a').data('sitename'));
         });
     </script>
 </body>
